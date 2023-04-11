@@ -10,6 +10,7 @@ This is a simple chatbot using OpenAI's Completions endpoint to have a custom ch
 
 ## Setup
 - Sign up at https://platform.openai.com and generate an API key
+- Create a file called .env.local at the root and add your key i.e. OPENAI_API_KEY=YOUR_KEY_HERE
 - npm i
 - npm run dev
 - npm run build
