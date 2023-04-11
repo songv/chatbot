@@ -1,0 +1,50 @@
+/* Styles: Utility */
+/* -----------------------------------*/
+
+.gradientBg {
+  background-image: linear-gradient(
+  180deg,theme('colors.quaternary') 40%,theme('colors.secondary') 60%,theme('colors.denary') 80%,theme('colors.nonary'));
+  -webkit-mask-image: linear-gradient(
+    180deg,theme('colors.quaternary') 40%,theme('colors.secondary') 60%,theme('colors.denary') 60%,theme('colors.nonary'));
+  mask-image: linear-gradient(
+    180deg,theme('colors.quaternary') 40%,theme('colors.secondary') 60%,theme('colors.denary') 80%,theme('colors.nonary'));
+}
+
+.gradientBorder {
+  background-image: radial-gradient(circle at 100% 100%, transparent 15px, #94fffd 15px, #94fffd 16px, transparent 16px), linear-gradient(to right, #94fffd, #00cfc8), radial-gradient(circle at 0% 100%, transparent 15px, #00cfc8 15px, #00cfc8 16px, transparent 16px), linear-gradient(to bottom, #00cfc8, #00ff9c), radial-gradient(circle at 0% 0%, transparent 15px, #00ff9c 15px, #00ff9c 16px, transparent 16px), linear-gradient(to left, #00ff9c, #aeffd0), radial-gradient(circle at 100% 0%, transparent 15px, #aeffd0 15px, #aeffd0 16px, transparent 16px), linear-gradient(to top, #aeffd0, #94fffd);
+  background-size: 16px 16px, calc(100% - 32px) 1px, 16px 16px, 1px calc(100% - 32px);
+  background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+  background-repeat: no-repeat;
+}
+
+.gradientButtonGlow {
+  width: 100%;
+  padding: 1rem;
+  color: theme('colors.quinary');
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: .5rem;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-size: 200% auto;
+  background-color: theme('colors.secondary');
+  box-shadow: 0 0 0 theme('colors.quinary');
+  background-image: linear-gradient(to right, theme('colors.secondary') 0%, theme('colors.primary') 80%, theme('colors.secondary') 100%);
+  &:hover {
+    background-color: theme('colors.primary');
+    background-position: right center; 
+    -webkit-box-shadow:0px 0px 50px 15px rgba(0,207,200,0.75);
+-moz-box-shadow: 0px 0px 50px 15px rgba(0,207,200,0.75);
+box-shadow: 0px 0px 50px 15px rgba(0,207,200,0.75);
+  }
+}
+
+.patternDots {
+  // On black
+  background-color: theme('colors.quinary');
+  background-size: 18px 18px;
+  background-image: radial-gradient(#272727 0.9px, #000000 0.9px);
+}
