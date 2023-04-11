@@ -44,7 +44,7 @@ export default function Chatbot() {
     messageStatus.current?.scrollIntoView({behavior: 'smooth'});
   }, [chatLog]);
   return (
-    <div className="flex-[1_1_100%] mx-auto {quoteStyles.section}>">
+    <div className="flex-[1_1_100%] mx-auto">
       <div className={"flex flex-col bg-quidenary p-8 md:p-12 mb-16 " + utilStyles.gradientBorder}>
       <h2 className="title text-denary">Chat with FED AI</h2>
         <div id="messages" className="flex-grow min-h-[200px] h-[calc(50vh)] overflow-y-scroll mb-12 scrollbar">
